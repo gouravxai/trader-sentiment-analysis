@@ -8,7 +8,7 @@ I wanted to find out. This project looks at Hyperliquid (a crypto trading platfo
 
 The goal: Figure out if market sentiment is just noise, or if it’s a secret signal for winning.
 
-🛠️ How I Built This
+How I Built This
 1. The Ingredients (The Data)
 I used two main sources:
 
@@ -46,7 +46,7 @@ Cool Your Jets: If you’re a high-frequency trader, watch out for "overtrading"
  Want to see the data yourself?
 Step 1: Get the code
 Bash
-git clone https://github.com/yourusername/trader-sentiment-analysis
+git clone https://github.com/gouravxai/trader-sentiment-analysis
 cd trader-sentiment-analysis
 Step 2: Get the tools
 You'll need Python and a few standard libraries:
