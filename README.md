@@ -1,7 +1,7 @@
 Data Science Intern Project @ Primetrade.ai
 Created by: Gourav Sharma
 
-💡 The Big Idea
+ The Big Idea
 Have you ever wondered if the "mood" of the market actually changes how people trade? When everyone is terrified (Fear), do traders play it safe? When everyone is dreaming of Lambos (Greed), do they get reckless?
 
 I wanted to find out. This project looks at Hyperliquid (a crypto trading platform) to see if Bitcoin’s Fear & Greed Index actually predicts how traders perform and behave.
@@ -31,19 +31,19 @@ The Lurkers: Passive traders who only jump in occasionally.
 
 The Crystal Ball: I built a Random Forest model to see if we could actually predict if a trade would be profitable based on the market mood and the trader's history.
 
-🧪 What did I find? (The "Aha!" Moments)
+ What did I find? (The "Aha!" Moments)
 Sentiment Matters: Traders don't just feel differently during Fear vs. Greed—they perform differently. PnL (profit) and win rates shift noticeably depending on the market's mood.
 
 Fear makes us frantic: Trade frequency changes when the market gets moody. Some traders overtrade when they're scared, which usually leads to losing money.
 
 Different strokes for different folks: "Consistent Winners" handle fear much better than "High-Frequency Traders."
 
-🚦 My Advice for Traders
+ My Advice for Traders
 Size Down in Fear: When the market index hits "Fear," it’s probably time to lower your position sizes. The risk-to-reward ratio gets much uglier during these times.
 
 Cool Your Jets: If you’re a high-frequency trader, watch out for "overtrading" during extreme sentiment swings. It’s a fast track to a big drawdown.
 
-🚀 Want to see the data yourself?
+ Want to see the data yourself?
 Step 1: Get the code
 Bash
 git clone https://github.com/yourusername/trader-sentiment-analysis
