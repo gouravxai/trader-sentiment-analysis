@@ -31,7 +31,7 @@ The Lurkers: Passive traders who only jump in occasionally.
 
 The Crystal Ball: I built a Random Forest model to see if we could actually predict if a trade would be profitable based on the market mood and the trader's history.
 
- What did I find? (The "Aha!" Moments)
+ What did I find?
 Sentiment Matters: Traders don't just feel differently during Fear vs. Greed—they perform differently. PnL (profit) and win rates shift noticeably depending on the market's mood.
 
 Fear makes us frantic: Trade frequency changes when the market gets moody. Some traders overtrade when they're scared, which usually leads to losing money.
