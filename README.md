@@ -42,23 +42,3 @@ Different strokes for different folks: "Consistent Winners" handle fear much bet
 Size Down in Fear: When the market index hits "Fear," it’s probably time to lower your position sizes. The risk-to-reward ratio gets much uglier during these times.
 
 Cool Your Jets: If you’re a high-frequency trader, watch out for "overtrading" during extreme sentiment swings. It’s a fast track to a big drawdown.
-
- Want to see the data yourself?
-Step 1: Get the code
-Bash
-git clone https://github.com/gouravxai/trader-sentiment-analysis
-cd trader-sentiment-analysis
-Step 2: Get the tools
-You'll need Python and a few standard libraries:
-
-Bash
-pip install pandas numpy matplotlib seaborn scikit-learn
-Step 3: Run the magic
-Make sure you have your CSV files (fear_greed_index.csv and historical_data.csv) in the folder, then run:
-
-Bash
-python analysis.py
-📊 What’s in the results?
-The script will spit out a bunch of charts (look for the .png files!) showing everything from how PnL shifts during Greed, to which trader archetypes are the most resilient.
-
-The MVP file: feature_importance.png — this shows you what actually matters most when trying to predict a winning trade.
