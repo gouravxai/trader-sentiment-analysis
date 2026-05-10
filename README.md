@@ -1,5 +1,4 @@
 TradePulse: Sentiment-Performance Correlation on Hyperliquid
-
 This project analyzes the correlation between market sentiment (Bitcoin Fear & Greed Index) and actual trader performance on the Hyperliquid platform. The goal was to determine if sentiment scores act as a leading indicator for profitability and trading behavior.
 
 Core Logic
