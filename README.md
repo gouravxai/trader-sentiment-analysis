@@ -1,44 +1,30 @@
-Data Science Intern Project @ Primetrade.ai
-Created by: Gourav Sharma
+This project analyzes the correlation between market sentiment (Bitcoin Fear & Greed Index) and actual trader performance on the Hyperliquid platform. The goal was to determine if sentiment scores act as a leading indicator for profitability and trading behavior.
 
- The Big Idea
-Have you ever wondered if the "mood" of the market actually changes how people trade? When everyone is terrified (Fear), do traders play it safe? When everyone is dreaming of Lambos (Greed), do they get reckless?
+Core Logic
+Data Fusion: Integrated daily Bitcoin Fear & Greed Index logs with raw trade-level data from Hyperliquid, aligned by precise timestamps.
 
-I wanted to find out. This project looks at Hyperliquid (a crypto trading platform) to see if Bitcoin’s Fear & Greed Index actually predicts how traders perform and behave.
+Trader Segmentation: Used K-Means Clustering to categorize traders into three distinct groups based on frequency, win rate, and volume:
 
-The goal: Figure out if market sentiment is just noise, or if it’s a secret signal for winning.
+Group A (Consistent): Steady performers with controlled drawdowns.
 
-How I Built This
-1. The Ingredients (The Data)
-I used two main sources:
+Group B (High-Frequency): Aggressive scalpers with high sensitivity to market shifts.
 
-Daily Bitcoin Sentiment: A log of whether the market was feeling Fearful or Greedy.
+Group C (Passive): Traders who only enter during extreme market conditions.
 
-Hyperliquid Trading History: The raw data of what traders actually did.
+Predictive Modeling: Implemented a Random Forest classifier to predict trade outcomes by using a combination of sentiment levels, trader history, and volatility metrics as input features.
 
-2. The Process
-Clean & Connect: I synced up the timestamps so I could see exactly what was happening on the platform during specific market moods.
+Key Findings
+Performance Variance: Significant shifts in PnL and win rates were observed when the sentiment moved from "Fear" to "Greed."
 
-The Deep Dive: I looked for patterns. Did win rates drop when fear was high? Did people trade more often when they were greedy?
+Overtrading Patterns: Data showed a direct spike in trade frequency during "Extreme Fear" cycles, often resulting in higher net losses for high-frequency accounts.
 
-Grouping Traders: I used an AI model (K-Means) to sort traders into three distinct "personalities":
+Resilience Mapping: The "Consistent" cluster showed the lowest correlation between sentiment swings and performance drops, indicating higher emotional/systemic discipline.
 
-The Pros: Consistent winners who keep their cool.
+Technical Stack
+Language: Python
 
-The Hustlers: High-frequency traders who are always active.
+Analysis: Pandas, NumPy
 
-The Lurkers: Passive traders who only jump in occasionally.
+Machine Learning: Scikit-Learn (K-Means, Random Forest)
 
-The Crystal Ball: I built a Random Forest model to see if we could actually predict if a trade would be profitable based on the market mood and the trader's history.
-
- What did I find?
-Sentiment Matters: Traders don't just feel differently during Fear vs. Greed—they perform differently. PnL (profit) and win rates shift noticeably depending on the market's mood.
-
-Fear makes us frantic: Trade frequency changes when the market gets moody. Some traders overtrade when they're scared, which usually leads to losing money.
-
-Different strokes for different folks: "Consistent Winners" handle fear much better than "High-Frequency Traders."
-
- My Advice for Traders
-Size Down in Fear: When the market index hits "Fear," it’s probably time to lower your position sizes. The risk-to-reward ratio gets much uglier during these times.
-
-Cool Your Jets: If you’re a high-frequency trader, watch out for "overtrading" during extreme sentiment swings. It’s a fast track to a big drawdown.
+Visualization: Matplotlib, Seaborn
